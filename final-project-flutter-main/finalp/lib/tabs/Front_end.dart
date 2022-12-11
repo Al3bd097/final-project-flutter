@@ -24,24 +24,32 @@ class FrontEnd extends StatelessWidget {
                     );
                   })));
                 },
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Row(
                   children: [
-                    Image.asset(
-                      Code.FrontEnds[index].image,
-                      height: 100,
-                      width: 100,
-                    ),
-                    Text(
-                      Code.FrontEnds[index].name,
-                      style: TextStyle(color: Color(0xfffca311)),
+                    Column(
+                      children: [
+                        Container(
+                          child: Image.asset(
+                            Code.FrontEnds[index].image,
+                            height: 100,
+                            width: 100,
+                          ),
+                          margin:
+                              EdgeInsets.only(bottom: 10, right: 20, top: 20),
+                        ),
+                        Text(
+                          Code.FrontEnds[index].name,
+                          style:
+                              TextStyle(color: Color(0xfffca311), fontSize: 30),
+                        ),
+                      ],
                     ),
                     Text(Code.FrontEnds[index].description),
                   ],
                 ),
               ),
               margin: EdgeInsets.only(top: 30, bottom: 20, right: 20, left: 20),
-              padding: EdgeInsets.only(bottom: 70),
+              padding: EdgeInsets.only(bottom: 40),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Color(0xffe5e5e5),

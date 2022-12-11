@@ -28,16 +28,34 @@ class _MainPageState extends State<MainPage> {
         child: pages[_currentIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xff000000),
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined), label: "Home"),
+            icon: Icon(
+              Icons.home_outlined,
+              color: Color(0xfffca311),
+              size: 30,
+            ),
+            label: "Home",
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.map_outlined), label: "Clubs"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+              icon: Icon(
+                Icons.map_outlined,
+                color: Color(0xfffca311),
+                size: 30,
+              ),
+              label: "Clubs"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                color: Color(0xfffca311),
+                size: 30,
+              ),
+              label: "Profile"),
         ],
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
-        selectedItemColor: Colors.green,
+        selectedItemColor: Color(0xfffca311),
         onTap: _onItemSelected,
       ),
     );
