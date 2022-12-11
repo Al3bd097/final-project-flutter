@@ -16,9 +16,9 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             TabBar(
-                indicator: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50), // Creates border
-                    color: Colors.blueAccent),
+                // indicator: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(80), // Creates border
+                //     color: Colors.blueAccent),
                 tabs: [
                   Tab(
                     icon: Icon(

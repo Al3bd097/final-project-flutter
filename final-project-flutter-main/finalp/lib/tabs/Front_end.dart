@@ -9,30 +9,36 @@ class FrontEnd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView.builder(
-      itemCount: Code.FrontEnds.length,
-      itemBuilder: ((context, index) {
-        return Container(
-          child: Card(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Image.asset(
-                Code.FrontEnds[index].image,
-                height: 100,
-                width: 100,
+      body: Container(
+        child: ListView.builder(
+          itemCount: Code.FrontEnds.length,
+          itemBuilder: ((context, index) {
+            return Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image.asset(
+                    Code.FrontEnds[index].image,
+                    height: 100,
+                    width: 100,
+                  ),
+                  Text(Code.FrontEnds[index].name),
+                  Text(Code.FrontEnds[index].description),
+                ],
               ),
-              Text(Code.FrontEnds[index].name),
-              Text(Code.FrontEnds[index].description),
-              Container(
-                child: Text("->"),
-                decoration: BoxDecoration(color: Colors.red),
-                padding: EdgeInsets.all(10),
-              )
-            ],
-          )),
-        );
-      }),
-    ));
+              margin: EdgeInsets.only(top: 30, bottom: 30, right: 70, left: 70),
+              padding: EdgeInsets.only(bottom: 100),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.blueAccent,
+                  boxShadow: [
+                    BoxShadow(color: Colors.orange, spreadRadius: 5)
+                  ]),
+            );
+          }),
+        ),
+      ),
+      backgroundColor: Colors.grey,
+    );
   }
 }
