@@ -25,12 +25,12 @@ class Code {
   static List<Code> BackEnds = [
     Code(
         name: "Php",
-        image: "assets/images/Swift-2-512.webp",
-        description: "iOS Coding Language"),
+        image: "assets/images/PHP-logo.svg.png",
+        description: "BackEnd Development"),
     Code(
       name: "django",
-      image: "assets/images/flutter-logo-transparent.png.webp",
-      description: "cross platform development",
+      image: "assets/images/Django-Logo.png",
+      description: "Backend Development",
     ),
     Code(
       name: "Html",
