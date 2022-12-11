@@ -3,24 +3,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class CodePage extends StatelessWidget {
-  const CodePage({super.key, required this.coode});
-  final Code coode;
-
+class CodePage2 extends StatelessWidget {
+  const CodePage2({super.key, required this.codes});
+  final Code codes;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(coode.name)),
+      appBar: AppBar(title: Text(codes.name)),
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Image.asset(
-            coode.image,
+            codes.image,
             width: 200,
           ),
-          Text(coode.name),
-          Text(coode.description)
+          Text(codes.name),
+          Text(codes.description)
         ],
       )),
     );

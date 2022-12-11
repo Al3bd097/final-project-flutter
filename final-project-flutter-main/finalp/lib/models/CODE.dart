@@ -21,4 +21,21 @@ class Code {
       description: "Web development structure",
     )
   ];
+
+  static List<Code> BackEnds = [
+    Code(
+        name: "Php",
+        image: "assets/images/Swift-2-512.webp",
+        description: "iOS Coding Language"),
+    Code(
+      name: "django",
+      image: "assets/images/flutter-logo-transparent.png.webp",
+      description: "cross platform development",
+    ),
+    Code(
+      name: "Html",
+      image: "assets/images/HTML5_logo_and_wordmark.svg.png",
+      description: "Web development structure",
+    )
+  ];
 }

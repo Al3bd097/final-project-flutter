@@ -1,3 +1,4 @@
+import 'package:finalp/pages/Home_Page.dart';
 import 'package:finalp/pages/Main_Page.dart';
 import 'package:finalp/pages/code_page.dart';
 import 'package:finalp/tabs/Front_end.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CodePage(),
+      home: MainPage(),
       theme: ThemeData(primarySwatch: Colors.blueGrey),
     );
   }
