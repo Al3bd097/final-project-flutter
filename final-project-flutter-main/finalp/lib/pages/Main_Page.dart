@@ -19,6 +19,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: AppBar(
+      //   backgroundColor: Colors.purple,
+      //   title: Text("Coder"),
+      // ),
       body: Container(
         child: pages[_currentIndex],
       ),
