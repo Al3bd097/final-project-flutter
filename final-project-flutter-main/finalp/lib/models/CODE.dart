@@ -5,16 +5,19 @@ class Code {
 
   Code({required this.name, required this.image, required this.description});
 
-  static List<Code> FrontEnd = [
-    Code(name: "Swift", image: "", description: "iOS Coding Language"),
+  static List<Code> FrontEnds = [
+    Code(
+        name: "Swift",
+        image: "assets/images/Swift-2-512.webp",
+        description: "iOS Coding Language"),
     Code(
       name: "Flutter",
-      image: "",
+      image: "assets/images/flutter-logo-transparent.png.webp",
       description: "cross platform development",
     ),
     Code(
       name: "Html",
-      image: "",
+      image: "assets/images/HTML5_logo_and_wordmark.svg.png",
       description: "Web development structure",
     )
   ];
