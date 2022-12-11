@@ -12,28 +12,34 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(title: Text("TapBar")),
-        body: Column(
-          children: [
-            TabBar(
-                // indicator: BoxDecoration(
-                //     borderRadius: BorderRadius.circular(80), // Creates border
-                //     color: Colors.blueAccent),
-                tabs: [
-                  Tab(
-                    icon: Icon(
-                      Icons.home,
-                      color: Colors.deepPurple,
-                    ),
-                  ),
-                  Tab(
-                      icon: Icon(
-                    Icons.home,
-                    color: Colors.deepPurple,
-                  ))
-                ]),
-            Expanded(child: TabBarView(children: [FrontEnd(), BackEnd()]))
-          ],
+        appBar: AppBar(
+          title: Text("TapBar"),
+          backgroundColor: Color(0xff000000),
+        ),
+        body: Container(
+          child: Column(
+            children: [
+              TabBar(indicatorColor: Color(0xfffca311), tabs: [
+                Tab(
+                    text: "FrontEnd",
+                    icon: ImageIcon(
+                      AssetImage("assets/images/2467893.png"),
+                      color: Color(0xfffca311),
+                      size: 45,
+                    )),
+                Tab(
+                    text: "BackEnd",
+                    icon: ImageIcon(
+                      AssetImage(
+                          "assets/images/backend-developer-1-478025.png"),
+                      color: Color(0xfffca311),
+                      size: 40,
+                    ))
+              ]),
+              Expanded(child: TabBarView(children: [FrontEnd(), BackEnd()]))
+            ],
+          ),
+          color: Color(0xff000000),
         ),
       ),
     );
