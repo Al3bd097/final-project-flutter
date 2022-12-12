@@ -15,6 +15,7 @@ class FrontEnd extends StatelessWidget {
           itemCount: Code.FrontEnds.length,
           itemBuilder: ((context, index) {
             return Container(
+              // ignore: sort_child_properties_last
               child: InkWell(
                 onTap: () {
                   Navigator.push(context,
@@ -29,12 +30,14 @@ class FrontEnd extends StatelessWidget {
                     Column(
                       children: [
                         Container(
+                          // ignore: sort_child_properties_last
                           child: Image.asset(
                             Code.FrontEnds[index].image,
                             height: 100,
                             width: 100,
                           ),
                           margin:
+                              // ignore: prefer_const_constructors
                               EdgeInsets.only(bottom: 10, right: 20, top: 20),
                         ),
                         Text(

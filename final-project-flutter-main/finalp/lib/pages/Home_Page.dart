@@ -19,23 +19,26 @@ class HomePage extends StatelessWidget {
         body: Container(
           child: Column(
             children: [
-              TabBar(indicatorColor: Color(0xfffca311), tabs: [
-                Tab(
-                    text: "FrontEnd",
-                    icon: ImageIcon(
-                      AssetImage("assets/images/2467893.png"),
-                      color: Color(0xfffca311),
-                      size: 45,
-                    )),
-                Tab(
-                    text: "BackEnd",
-                    icon: ImageIcon(
-                      AssetImage(
-                          "assets/images/backend-developer-1-478025.png"),
-                      color: Color(0xfffca311),
-                      size: 40,
-                    ))
-              ]),
+              TabBar(
+                  indicatorColor: Color(0xfffca311),
+                  indicatorWeight: 2.0,
+                  tabs: [
+                    Tab(
+                        text: "FrontEnd",
+                        icon: ImageIcon(
+                          AssetImage("assets/images/2467893.png"),
+                          color: Color(0xfffca311),
+                          size: 45,
+                        )),
+                    Tab(
+                        text: "BackEnd",
+                        icon: ImageIcon(
+                          AssetImage(
+                              "assets/images/backend-developer-1-478025.png"),
+                          color: Color(0xfffca311),
+                          size: 40,
+                        ))
+                  ]),
               Expanded(child: TabBarView(children: [FrontEnd(), BackEnd()]))
             ],
           ),
