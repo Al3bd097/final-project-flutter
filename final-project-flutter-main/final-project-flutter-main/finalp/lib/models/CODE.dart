@@ -3,8 +3,8 @@ class Code {
   String image;
   String imageBg;
   String description;
-  List<String> videosNames;
-  List<String> videoLinks;
+  String videosNames;
+  String videoLinks;
 
   Code(
       {required this.name,
@@ -21,14 +21,8 @@ class Code {
       image: "assets/images/Swift-2-512.webp",
       imageBg: "assets/images/swiftBg.jpg",
       description: "iOS Coding Language",
-      videosNames: [
-        "How to use Xcode in SwiftUI project | Bootcamp #1",
-        "Adding Text in SwiftUI | Bootcamp #2"
-      ],
-      videoLinks: [
-        "https://youtu.be/N-ntKJdVNBs",
-        "https://youtu.be/RKfkG01x79w"
-      ],
+      videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
+      videoLinks: "https://youtu.be/N-ntKJdVNBs",
     ),
     // Flutter
     Code(
@@ -36,14 +30,8 @@ class Code {
       image: "assets/images/flutter-logo-transparent.png.webp",
       imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "cross platform development",
-      videosNames: [
-        "Flutter Tutorial for Beginners #1 - Intro & Setup",
-        "Flutter Tutorial for Beginners #2 - Flutter Overview"
-      ],
-      videoLinks: [
-        "https://youtu.be/1ukSR1GRtMU",
-        "https://youtu.be/bKueYVtV0eA"
-      ],
+      videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
+      videoLinks: "https://youtu.be/1ukSR1GRtMU",
     ),
     // Html
     Code(
@@ -51,8 +39,8 @@ class Code {
       image: "assets/images/HTML5_logo_and_wordmark.svg.png",
       imageBg: "assets/images/html.png",
       description: "Web development structure",
-      videosNames: [""],
-      videoLinks: [""],
+      videosNames: "",
+      videoLinks: "",
     ),
   ];
   //
@@ -63,21 +51,20 @@ class Code {
   static List<Code> BackEnds = [
     // Php
     Code(
-      name: "Php",
-      image: "assets/images/phpbg.png",
-      description: "BackEnd Development",
-      imageBg: "assets/images/swiftBg.jpg",
-      videosNames: [""],
-      videoLinks: [""],
-    ),
+        name: "Php",
+        image: "assets/images/phpbg.png",
+        description: "BackEnd Development",
+        imageBg: "assets/images/swiftBg.jpg",
+        videosNames: "",
+        videoLinks: ""),
     // django
     Code(
       name: "django",
       image: "assets/images/Django-Logo.png",
       imageBg: "assets/images/djangobg.png",
       description: "Backend Development",
-      videosNames: [""],
-      videoLinks: [""],
+      videosNames: "",
+      videoLinks: "",
     ),
     // Html
     Code(
@@ -85,8 +72,8 @@ class Code {
       image: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
-      videosNames: [""],
-      videoLinks: [""],
+      videosNames: "",
+      videoLinks: "",
     )
   ];
 }

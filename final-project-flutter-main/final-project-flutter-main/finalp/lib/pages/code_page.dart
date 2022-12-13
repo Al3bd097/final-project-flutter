@@ -51,9 +51,12 @@ class CodePage extends StatelessWidget {
                         color: Color(0xff14213d),
                       ),
                     ),
-                    Text(
-                      ">",
-                      style: TextStyle(fontSize: 40),
+                    RotatedBox(
+                      quarterTurns: 1,
+                      child: Text(
+                        ">",
+                        style: TextStyle(fontSize: 30),
+                      ),
                     )
                   ],
                 ),
