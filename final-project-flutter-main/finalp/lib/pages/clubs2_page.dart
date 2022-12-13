@@ -14,15 +14,26 @@ class ClubsView2 extends StatelessWidget {
         title: Text("Clubs"),
         backgroundColor: Color(0xff000000),
       ),
-      body: Center(
-          child: Column(
-        children: [
-          Image.asset(
-            clubs.image,
-          ),
-          Text(clubs.name)
-        ],
-      )),
+      body: Container(
+        child: Center(
+            child: Column(
+          children: [
+            Image.asset(
+              clubs.image,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  clubs.name,
+                  style: TextStyle(color: Color(0xffe5e5e5), fontSize: 30),
+                ),
+              ],
+            )
+          ],
+        )),
+        color: Color(0xff14213d),
+      ),
     );
   }
 }
