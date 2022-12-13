@@ -47,7 +47,7 @@ class ClubsView extends StatelessWidget {
                             Text(
                               Club.clubs[index].name,
                               style: TextStyle(
-                                  color: Color(0xfffca311), fontSize: 30),
+                                  color: Color(0xff4E32DD), fontSize: 30),
                             ),
                           ],
                         ),
@@ -64,7 +64,7 @@ class ClubsView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       color: Color(0xffe5e5e5),
                       boxShadow: [
-                        BoxShadow(color: Color(0xff482bc4), spreadRadius: 5)
+                        BoxShadow(color: Color(0xff4E32DD), spreadRadius: 5)
                       ]),
                 );
               })),

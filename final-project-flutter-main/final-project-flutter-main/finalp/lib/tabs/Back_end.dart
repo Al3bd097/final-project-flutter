@@ -41,7 +41,7 @@ class BackEnd extends StatelessWidget {
                         Text(
                           Code.BackEnds[index].name,
                           style:
-                              TextStyle(color: Color(0xfffca311), fontSize: 30),
+                              TextStyle(color: Color(0xff4E32DD), fontSize: 30),
                         ),
                       ],
                     ),
@@ -61,7 +61,7 @@ class BackEnd extends StatelessWidget {
           }),
         ),
       ),
-      backgroundColor: Color(0xff14213d),
+      backgroundColor: Color(0xff09051a),
     );
   }
 }

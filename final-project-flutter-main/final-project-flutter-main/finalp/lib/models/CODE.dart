@@ -1,6 +1,7 @@
 class Code {
   String name;
   String image;
+  String imageBg;
   String description;
   List<String> videosNames;
   List<String> videoLinks;
@@ -8,6 +9,7 @@ class Code {
   Code(
       {required this.name,
       required this.image,
+      required this.imageBg,
       required this.description,
       required this.videosNames,
       required this.videoLinks});
@@ -17,6 +19,7 @@ class Code {
     Code(
       name: "Swift",
       image: "assets/images/Swift-2-512.webp",
+      imageBg: "assets/images/swiftBg.jpg",
       description: "iOS Coding Language",
       videosNames: [
         "How to use Xcode in SwiftUI project | Bootcamp #1",
@@ -31,6 +34,7 @@ class Code {
     Code(
       name: "Flutter",
       image: "assets/images/flutter-logo-transparent.png.webp",
+      imageBg: "assets/images/flutterbg.jpg",
       description: "cross platform development",
       videosNames: [
         "Flutter Tutorial for Beginners #1 - Intro & Setup",
@@ -45,6 +49,7 @@ class Code {
     Code(
       name: "Html",
       image: "assets/images/HTML5_logo_and_wordmark.svg.png",
+      imageBg: "assets/images/html.png",
       description: "Web development structure",
       videosNames: [""],
       videoLinks: [""],
@@ -61,6 +66,7 @@ class Code {
       name: "Php",
       image: "assets/images/PHP-logo.svg.png",
       description: "BackEnd Development",
+      imageBg: "assets/images/swiftBg.jpg",
       videosNames: [""],
       videoLinks: [""],
     ),
@@ -68,6 +74,7 @@ class Code {
     Code(
       name: "django",
       image: "assets/images/Django-Logo.png",
+      imageBg: "assets/images/swiftBg.jpg",
       description: "Backend Development",
       videosNames: [""],
       videoLinks: [""],
@@ -76,6 +83,7 @@ class Code {
     Code(
       name: "Html",
       image: "assets/images/HTML5_logo_and_wordmark.svg.png",
+      imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
       videosNames: [""],
       videoLinks: [""],
