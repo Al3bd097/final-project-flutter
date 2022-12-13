@@ -34,7 +34,7 @@ class Code {
     Code(
       name: "Flutter",
       image: "assets/images/flutter-logo-transparent.png.webp",
-      imageBg: "assets/images/flutterbg.jpg",
+      imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "cross platform development",
       videosNames: [
         "Flutter Tutorial for Beginners #1 - Intro & Setup",
@@ -64,7 +64,7 @@ class Code {
     // Php
     Code(
       name: "Php",
-      image: "assets/images/PHP-logo.svg.png",
+      image: "assets/images/phpbg.png",
       description: "BackEnd Development",
       imageBg: "assets/images/swiftBg.jpg",
       videosNames: [""],
@@ -74,7 +74,7 @@ class Code {
     Code(
       name: "django",
       image: "assets/images/Django-Logo.png",
-      imageBg: "assets/images/swiftBg.jpg",
+      imageBg: "assets/images/djangobg.png",
       description: "Backend Development",
       videosNames: [""],
       videoLinks: [""],
@@ -82,7 +82,7 @@ class Code {
     // Html
     Code(
       name: "Html",
-      image: "assets/images/HTML5_logo_and_wordmark.svg.png",
+      image: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
       videosNames: [""],

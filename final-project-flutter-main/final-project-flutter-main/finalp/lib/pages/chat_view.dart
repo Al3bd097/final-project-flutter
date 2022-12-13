@@ -18,8 +18,12 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Chathhshd")),
-      body: Chat(
-          messages: _messages, onSendPressed: _handleSendPressed, user: _user),
+      body: Container(
+        child: Chat(
+            messages: _messages,
+            onSendPressed: _handleSendPressed,
+            user: _user),
+      ),
     );
   }
 

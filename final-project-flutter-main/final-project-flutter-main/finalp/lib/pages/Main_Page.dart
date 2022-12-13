@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:finalp/pages/chat_view.dart';
 import 'package:finalp/pages/club_page.dart';
+import 'package:finalp/pages/contacts_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,7 +18,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
-  var pages = [HomePage(), ClubView(), ProfilePage()];
+  var pages = [HomePage(), ContactsView(), ClubView(), ProfilePage()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +43,14 @@ class _MainPageState extends State<MainPage> {
             ),
             label: "Home",
           ),
-
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.chat_bubble_outline,
+              color: Color(0xff4E32DD),
+              size: 30,
+            ),
+            label: "Home",
+          ),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.map_outlined,
