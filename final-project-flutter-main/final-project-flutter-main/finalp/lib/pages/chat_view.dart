@@ -1,3 +1,4 @@
+import 'package:finalp/models/CODE.dart';
 import 'package:finalp/models/CONTACT.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -6,8 +7,8 @@ import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 
 class ChatPage extends StatefulWidget {
-  const ChatPage({super.key});
-
+  const ChatPage({super.key, required this.cde});
+  final Code cde;
   @override
   State<ChatPage> createState() => _ChatPageState();
 }

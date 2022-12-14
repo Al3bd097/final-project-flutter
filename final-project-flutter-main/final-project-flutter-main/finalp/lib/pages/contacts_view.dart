@@ -4,6 +4,7 @@ import 'package:finalp/pages/chat_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 
 class ContactsView extends StatelessWidget {
   const ContactsView({super.key});
@@ -18,37 +19,50 @@ class ContactsView extends StatelessWidget {
       ),
       body: Container(
           child: ListView.builder(
-              itemCount: Contact.contacts.length,
+              itemCount: Code.AllEnds.length,
               itemBuilder: ((context, index) {
                 return InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: ((context) {
-                      return ChatPage();
-                    })));
-                  },
-                  child: Card(
-                    child: Row(
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(300.0),
-                          child: Image.asset(
-                            Contact.contacts[0].image,
-                            height: 70,
-                            width: 70,
-                          ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return ChatPage(
+                          cde: Code.AllEnds[index],
+                        );
+                      })));
+                    },
+                    child: Container(
+                      child: ListTile(
+                        contentPadding: EdgeInsets.all(15),
+                        leading: Transform.scale(
+                          scale: 1.3,
+                          child: CircleAvatar(
+                              backgroundImage: AssetImage(
+                            Code.AllEnds[index].image,
+                          )),
                         ),
-                        Column(
-                          children: [
-                            Text(Contact.contacts[index].name),
-                            Text(Contact.contacts[index].description)
-                          ],
-                        )
-                      ],
-                    ),
-                    color: Color(0xff4E32DD),
-                  ),
-                );
+                        title: Text(
+                          Code.AllEnds[index].name,
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        subtitle: Text(Code.AllEnds[index].description),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(40)),
+                        trailing: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xff4E32DD),
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                      margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                      decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [Color(0xff4E32DD), Color(0xff)]),
+                          borderRadius: BorderRadius.circular(20)),
+                    ));
               }))),
     );
   }
