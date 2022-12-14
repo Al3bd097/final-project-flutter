@@ -7,8 +7,7 @@ import 'package:flutter_chat_ui/flutter_chat_ui.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 
 class ChatPage extends StatefulWidget {
-  const ChatPage({super.key, required this.cde});
-  final Code cde;
+  const ChatPage({super.key});
   @override
   State<ChatPage> createState() => _ChatPageState();
 }
@@ -20,7 +19,7 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chat"),
+        title: Text("Swift"),
         backgroundColor: Color(0xff09051A),
       ),
       body: Container(

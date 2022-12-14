@@ -28,28 +28,32 @@ class ClubsView extends StatelessWidget {
                         );
                       })));
                     },
-                    child: Row(
+                    child: Column(
                       children: [
-                        Column(
-                          children: [
-                            Container(
-                              // ignore: sort_child_properties_last
-                              child: Image.asset(
-                                Club.clubs[index].image,
-                                height: 100,
-                                width: 100,
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                // ignore: sort_child_properties_last
+                                child: Image.asset(
+                                  Club.clubs[index].image,
+                                  height: 100,
+                                  width: 100,
+                                ),
+                                margin:
+                                    // ignore: prefer_const_constructors
+                                    EdgeInsets.only(
+                                        bottom: 10, right: 20, top: 20),
                               ),
-                              margin:
-                                  // ignore: prefer_const_constructors
-                                  EdgeInsets.only(
-                                      bottom: 10, right: 20, top: 20),
-                            ),
-                            Text(
-                              Club.clubs[index].name,
-                              style: TextStyle(
-                                  color: Color(0xff4E32DD), fontSize: 30),
-                            ),
-                          ],
+                              Text(
+                                Club.clubs[index].name,
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 30),
+                              ),
+                            ],
+                          ),
                         ),
                         Text(
                           Club.clubs[index].name,
@@ -63,6 +67,9 @@ class ClubsView extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color(0xffe5e5e5),
+                      image: DecorationImage(
+                          image: AssetImage(Club.clubs[index].imagebg),
+                          fit: BoxFit.cover),
                       boxShadow: [
                         BoxShadow(color: Color(0xff4E32DD), spreadRadius: 5)
                       ]),

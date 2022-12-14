@@ -25,9 +25,7 @@ class ContactsView extends StatelessWidget {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: ((context) {
-                        return ChatPage(
-                          cde: Code.AllEnds[index],
-                        );
+                        return ChatPage();
                       })));
                     },
                     child: Container(
@@ -35,10 +33,13 @@ class ContactsView extends StatelessWidget {
                         contentPadding: EdgeInsets.all(15),
                         leading: Transform.scale(
                           scale: 1.3,
-                          child: CircleAvatar(
-                              backgroundImage: AssetImage(
-                            Code.AllEnds[index].image,
-                          )),
+                          child: Transform.scale(
+                            scale: 1.0,
+                            child: CircleAvatar(
+                                backgroundImage: AssetImage(
+                              Code.AllEnds[index].image,
+                            )),
+                          ),
                         ),
                         title: Text(
                           Code.AllEnds[index].name,
