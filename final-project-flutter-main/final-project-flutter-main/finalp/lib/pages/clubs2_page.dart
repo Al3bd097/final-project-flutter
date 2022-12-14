@@ -3,6 +3,7 @@ import 'package:finalp/models/CLUB.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ClubsView2 extends StatelessWidget {
   ClubsView2({super.key, required this.clubs});
@@ -12,6 +13,13 @@ class ClubsView2 extends StatelessWidget {
     "https://acakuw.com/wp-content/uploads/2022/02/8-2.jpg",
     "http://www.annaharkw.com/Resources/ArticlesPictures/2022/08/18/d6450cf4-975f-4ff6-a602-7a1e8c92dec3_main_New.jpg"
   ];
+
+  Future<void> _launchURL(String url) async {
+    final Uri uri = Uri(scheme: "https", host: url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      throw "Can not launch url";
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +55,11 @@ class ClubsView2 extends StatelessWidget {
                         ))
                     .toList(),
               ),
+              ElevatedButton(
+                  onPressed: () {
+                    _launchURL("https://goo.gl/maps/N1MLc8uBhfaHhs2V7");
+                  },
+                  child: Text("Here")),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -187,10 +200,6 @@ class ClubsView2 extends StatelessWidget {
                   ),
                 ],
               ),
-              Text(
-                "Hello There!",
-                style: TextStyle(color: Colors.white),
-              )
             ],
           )),
           color: Color(0xff09051a),
