@@ -52,9 +52,9 @@ class Code {
     // Php
     Code(
         name: "Php",
-        image: "assets/images/phpbg.png",
+        image: "assets/images/PHP-logo.svg.png",
         description: "BackEnd Development",
-        imageBg: "assets/images/swiftBg.jpg",
+        imageBg: "assets/images/phpbg.png",
         videosNames: "",
         videoLinks: ""),
     // django
@@ -69,7 +69,7 @@ class Code {
     // Html
     Code(
       name: "Html",
-      image: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
+      image: "assets/images/HTML5_logo_and_wordmark.svg.png",
       imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
       videosNames: "",

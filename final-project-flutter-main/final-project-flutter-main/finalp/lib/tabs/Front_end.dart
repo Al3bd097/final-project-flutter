@@ -40,7 +40,8 @@ class FrontEnd extends StatelessWidget {
                           Text(
                             Code.FrontEnds[index].name,
                             style: TextStyle(
-                                color: Color(0xff4E32DD), fontSize: 22),
+                                color: Colors.white.withOpacity(0.8),
+                                fontSize: 22),
                           ),
                         ],
                       ),
@@ -62,7 +63,7 @@ class FrontEnd extends StatelessWidget {
                       image: AssetImage(Code.FrontEnds[index].imageBg),
                       fit: BoxFit.cover),
                   boxShadow: [
-                    BoxShadow(color: Color(0xff4E32DD), spreadRadius: 2.9),
+                    BoxShadow(color: Color(0xff4E32DD), spreadRadius: 1.8),
                   ]),
             );
           }),

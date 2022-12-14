@@ -13,9 +13,10 @@ class BackEnd extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: ListView.builder(
-          itemCount: Code.FrontEnds.length,
+          itemCount: Code.BackEnds.length,
           itemBuilder: ((context, index) {
             return Container(
+              // ignore: sort_child_properties_last
               child: InkWell(
                 onTap: () {
                   Navigator.push(context,
@@ -25,43 +26,50 @@ class BackEnd extends StatelessWidget {
                     );
                   })));
                 },
-                child: Row(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      children: [
-                        Container(
-                          child: Image.asset(
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Image.asset(
                             Code.BackEnds[index].image,
-                            height: 100,
-                            width: 100,
+                            height: 40,
+                            width: 40,
                           ),
-                          margin:
-                              EdgeInsets.only(bottom: 10, right: 20, top: 20),
-                        ),
-                        Text(
-                          Code.BackEnds[index].name,
-                          style:
-                              TextStyle(color: Color(0xff4E32DD), fontSize: 30),
-                        ),
-                      ],
+                          Text(
+                            Code.BackEnds[index].name,
+                            style: TextStyle(
+                                color: Color(0xff4E32DD), fontSize: 22),
+                          ),
+                        ],
+                      ),
+                      margin: EdgeInsets.all(10),
                     ),
-                    Text(Code.BackEnds[index].description),
+                    Text(
+                      Code.BackEnds[index].description,
+                      style: TextStyle(color: Colors.white.withOpacity(0.8)),
+                    ),
                   ],
                 ),
               ),
+              height: 170,
               margin: EdgeInsets.only(top: 30, bottom: 20, right: 20, left: 20),
               padding: EdgeInsets.only(bottom: 40),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0xffe5e5e5),
+                  image: DecorationImage(
+                      image: AssetImage(Code.FrontEnds[index].imageBg),
+                      fit: BoxFit.cover),
                   boxShadow: [
-                    BoxShadow(color: Color(0xff482bc4), spreadRadius: 5)
+                    BoxShadow(color: Color(0xff4E32DD), spreadRadius: 1.8),
                   ]),
             );
           }),
         ),
+        color: Color(0xff09051A),
       ),
-      backgroundColor: Color(0xff09051a),
     );
   }
 }

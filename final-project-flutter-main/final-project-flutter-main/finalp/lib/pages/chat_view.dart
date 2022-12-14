@@ -1,3 +1,4 @@
+import 'package:finalp/models/CONTACT.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -17,7 +18,10 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Chathhshd")),
+      appBar: AppBar(
+        title: Text("Chat"),
+        backgroundColor: Color(0xff09051A),
+      ),
       body: Container(
         child: Chat(
             messages: _messages,

@@ -1,4 +1,5 @@
 import 'package:finalp/models/CODE.dart';
+import 'package:finalp/pages/videos_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -10,7 +11,7 @@ class CodePage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(Code.FrontEnds[0].name),
+        title: Text(codes.name),
         backgroundColor: Color(0xff000000),
       ),
       body: Container(
@@ -30,32 +31,42 @@ class CodePage2 extends StatelessWidget {
               codes.description,
               style: TextStyle(fontSize: 20, color: Color(0xffe5e5e5)),
             ),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Videos",
-                    style: TextStyle(
-                      fontSize: 40,
-                      color: Color(0xff14213d),
+            InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: ((context) {
+                  return VideosPage();
+                })));
+              },
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Videos",
+                      style: TextStyle(
+                        fontSize: 40,
+                        color: Color(0xff14213d),
+                      ),
                     ),
-                  ),
-                  Text(
-                    ">",
-                    style: TextStyle(fontSize: 40),
-                  )
-                ],
+                    RotatedBox(
+                      quarterTurns: 1,
+                      child: Text(
+                        ">",
+                        style: TextStyle(fontSize: 30),
+                      ),
+                    )
+                  ],
+                ),
+                margin: EdgeInsets.only(top: 50, right: 10, left: 10),
+                decoration: BoxDecoration(
+                    color: Color(0xffe5e5e5),
+                    borderRadius: BorderRadius.circular(10)),
+                padding: EdgeInsets.all(15),
               ),
-              margin: EdgeInsets.only(top: 50, right: 10, left: 10),
-              decoration: BoxDecoration(
-                  color: Color(0xffe5e5e5),
-                  borderRadius: BorderRadius.circular(10)),
-              padding: EdgeInsets.all(15),
-            )
+            ),
           ],
         )),
-        color: Color(0xff14213d),
+        color: Color(0xff09051a),
       ),
     );
   }
