@@ -1,3 +1,4 @@
+import 'package:finalp/pages/Navigation.dart';
 import 'package:finalp/tabs/Back_end.dart';
 import 'package:finalp/tabs/Front_end.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+        drawer: const NavigationDrawer(),
         appBar: AppBar(
           title: Text("TapBar"),
           backgroundColor: Color(0xff000000),
