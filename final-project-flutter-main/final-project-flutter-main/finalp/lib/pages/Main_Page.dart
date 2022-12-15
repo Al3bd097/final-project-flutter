@@ -19,7 +19,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
-  var pages = [HomePage(), ContactsView(), ClubView(), ProfilePage()];
+  var pages = [ContactsView(), HomePage(), ClubView()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,15 +38,15 @@ class _MainPageState extends State<MainPage> {
           // Home Icon
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_outlined,
+              Icons.chat_bubble_outline,
               color: Color(0xff4E32DD),
               size: 30,
             ),
-            label: "Home",
+            label: "Community",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.chat_bubble_outline,
+              Icons.home_outlined,
               color: Color(0xff4E32DD),
               size: 30,
             ),
@@ -59,13 +59,6 @@ class _MainPageState extends State<MainPage> {
                 size: 30,
               ),
               label: "Clubs"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person,
-                color: Color(0xff4E32DD),
-                size: 30,
-              ),
-              label: "Profile"),
         ],
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,

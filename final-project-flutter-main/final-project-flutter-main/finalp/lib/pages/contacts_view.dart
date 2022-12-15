@@ -1,5 +1,6 @@
 import 'package:finalp/models/CODE.dart';
 import 'package:finalp/models/CONTACT.dart';
+import 'package:finalp/pages/Navigation.dart';
 import 'package:finalp/pages/chat_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -12,6 +13,7 @@ class ContactsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const NavigationDrawer(),
       backgroundColor: Color(0xff09051A),
       appBar: AppBar(
         title: Text("Developers"),

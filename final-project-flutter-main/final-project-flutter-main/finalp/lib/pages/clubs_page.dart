@@ -1,4 +1,5 @@
 import 'package:finalp/models/CLUB.dart';
+import 'package:finalp/pages/Navigation.dart';
 import 'package:finalp/pages/clubs2_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -10,6 +11,7 @@ class ClubsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        drawer: const NavigationDrawer(),
         appBar: AppBar(
           title: Text("Clubs"),
           backgroundColor: Color(0xff000000),

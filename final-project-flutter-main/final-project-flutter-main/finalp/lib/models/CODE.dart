@@ -19,7 +19,7 @@ class Code {
     Code(
       name: "Swift",
       image: "assets/images/Swift-2-512.webp",
-      imageBg: "assets/images/swiftBg.jpg",
+      imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "iOS Coding Language",
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
@@ -28,7 +28,7 @@ class Code {
     Code(
       name: "Flutter",
       image: "assets/images/flutter-logo-transparent.png.webp",
-      imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
+      imageBg: "assets/images/swiftBg.jpg",
       description: "cross platform development",
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",

@@ -60,7 +60,7 @@ class BackEnd extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                      image: AssetImage(Code.FrontEnds[index].imageBg),
+                      image: AssetImage(Code.BackEnds[index].imageBg),
                       fit: BoxFit.cover),
                   boxShadow: [
                     BoxShadow(color: Color(0xff4E32DD), spreadRadius: 1.8),
