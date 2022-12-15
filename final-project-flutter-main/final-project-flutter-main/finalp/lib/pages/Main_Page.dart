@@ -19,10 +19,12 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
-  var pages = [ContactsView(), HomePage(), ClubView()];
+  var pages = [HomePage(), ContactsView(), ClubView()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const NavigationDrawer(),
+
       // appBar: AppBar(
       //   backgroundColor: Colors.purple,
       //   title: Text("Coder"),
@@ -38,19 +40,19 @@ class _MainPageState extends State<MainPage> {
           // Home Icon
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.chat_bubble_outline,
-              color: Color(0xff4E32DD),
-              size: 30,
-            ),
-            label: "Community",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.home_outlined,
               color: Color(0xff4E32DD),
               size: 30,
             ),
             label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.chat_bubble_outline,
+              color: Color(0xff4E32DD),
+              size: 30,
+            ),
+            label: "Community",
           ),
           BottomNavigationBarItem(
               icon: Icon(

@@ -1,6 +1,7 @@
 import 'dart:collection';
 
 import 'package:finalp/models/CODE.dart';
+import 'package:finalp/pages/Profile_Page.dart';
 import 'package:finalp/pages/videos_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -37,7 +38,7 @@ class CodePage extends StatelessWidget {
             InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                  return VideosPage();
+                  return ProfilePage();
                 })));
               },
               child: Container(
