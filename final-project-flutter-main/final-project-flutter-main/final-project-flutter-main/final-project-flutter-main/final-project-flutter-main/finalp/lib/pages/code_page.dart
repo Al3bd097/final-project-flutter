@@ -6,6 +6,7 @@ import 'package:finalp/pages/videos_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:url_launcher/link.dart';
 
 class CodePage extends StatelessWidget {
   const CodePage({super.key, required this.coode});
@@ -68,6 +69,11 @@ class CodePage extends StatelessWidget {
                 padding: EdgeInsets.all(15),
               ),
             ),
+            Link(
+                target: LinkTarget.blank,
+                uri: Uri.parse(coode.videoLinks),
+                builder: (context, followLink) => GestureDetector(
+                    onTap: followLink, child: Image.asset(coode.videoImage))),
           ],
         )),
         color: Color(0xff09051a),

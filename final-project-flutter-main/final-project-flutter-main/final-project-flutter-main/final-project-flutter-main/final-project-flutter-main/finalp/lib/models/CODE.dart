@@ -4,6 +4,7 @@ class Code {
   String imageBg;
   String description;
   String videosNames;
+  String videoImage;
   String videoLinks;
 
   Code(
@@ -12,6 +13,7 @@ class Code {
       required this.imageBg,
       required this.description,
       required this.videosNames,
+      required this.videoImage,
       required this.videoLinks});
 
   static List<Code> FrontEnds = [
@@ -22,6 +24,7 @@ class Code {
       imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "iOS Coding Language",
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
+      videoImage: "finalp/assets/images/swiftuiVideo.png",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
     ),
     // Flutter
@@ -31,6 +34,7 @@ class Code {
       imageBg: "assets/images/swiftBg.jpg",
       description: "cross platform development",
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
+      videoImage: "finalp/assets/images/flutterVideo.png",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",
     ),
     // Html
@@ -39,8 +43,9 @@ class Code {
       image: "assets/images/HTML5_logo_and_wordmark.svg.png",
       imageBg: "assets/images/html.png",
       description: "Web development structure",
-      videosNames: "",
-      videoLinks: "",
+      videosNames: "HTML Tutorial for Beginners: HTML Crash Course",
+      videoImage: "finalp/assets/images/htmlVideo.png",
+      videoLinks: "https://youtu.be/qz0aGYrrlhU",
     ),
   ];
   //
@@ -56,6 +61,7 @@ class Code {
         description: "BackEnd Development",
         imageBg: "assets/images/phpbg.png",
         videosNames: "",
+        videoImage: "",
         videoLinks: ""),
     // django
     Code(
@@ -64,6 +70,7 @@ class Code {
       imageBg: "assets/images/djangobg.png",
       description: "Backend Development",
       videosNames: "",
+      videoImage: "",
       videoLinks: "",
     ),
     // Html
@@ -73,6 +80,7 @@ class Code {
       imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
       videosNames: "",
+      videoImage: "",
       videoLinks: "",
     )
   ];
@@ -88,6 +96,7 @@ class Code {
       imageBg: "assets/images/swiftBg.jpg",
       description: "iOS Coding Language",
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
+      videoImage: "",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
     ),
     // Flutter
@@ -97,6 +106,7 @@ class Code {
       imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "cross platform development",
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
+      videoImage: "",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",
     ),
     // Html
@@ -106,6 +116,7 @@ class Code {
       imageBg: "assets/images/html.png",
       description: "Web development structure",
       videosNames: "",
+      videoImage: "",
       videoLinks: "",
     ),
     // Php
@@ -115,6 +126,7 @@ class Code {
         description: "BackEnd Development",
         imageBg: "assets/images/phpbg.png",
         videosNames: "",
+        videoImage: "",
         videoLinks: ""),
     // django
     Code(
@@ -123,6 +135,7 @@ class Code {
       imageBg: "assets/images/djangobg.png",
       description: "Backend Development",
       videosNames: "",
+      videoImage: "",
       videoLinks: "",
     ),
     // Html
@@ -132,6 +145,7 @@ class Code {
       imageBg: "assets/images/swiftBg.jpg",
       description: "Web development structure",
       videosNames: "",
+      videoImage: "",
       videoLinks: "",
     )
   ];

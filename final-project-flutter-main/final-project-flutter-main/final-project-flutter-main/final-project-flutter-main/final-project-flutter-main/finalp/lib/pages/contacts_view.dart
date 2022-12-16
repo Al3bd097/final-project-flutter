@@ -14,7 +14,7 @@ class ContactsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const NavigationDrawer(),
-      backgroundColor: Color(0xff09051A),
+      backgroundColor: Color.fromARGB(255, 14, 9, 40),
       appBar: AppBar(
         title: Text("Developers"),
         backgroundColor: Color(0xff000000),

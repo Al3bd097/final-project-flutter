@@ -38,34 +38,22 @@ class ClubsView extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
-                                // ignore: sort_child_properties_last
-                                child: Image.asset(
-                                  Club.clubs[index].image,
-                                  height: 100,
-                                  width: 100,
+                                child: Text(
+                                  Club.clubs[index].name,
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 30),
                                 ),
-                                margin:
-                                    // ignore: prefer_const_constructors
-                                    EdgeInsets.only(
-                                        bottom: 10, right: 20, top: 20),
-                              ),
-                              Text(
-                                Club.clubs[index].name,
-                                style:
-                                    TextStyle(color: Colors.grey, fontSize: 30),
+                                margin: EdgeInsets.only(bottom: 60),
                               ),
                             ],
                           ),
-                        ),
-                        Text(
-                          Club.clubs[index].name,
                         ),
                       ],
                     ),
                   ),
                   margin:
                       EdgeInsets.only(top: 30, bottom: 20, right: 20, left: 20),
-                  padding: EdgeInsets.only(bottom: 40),
+                  padding: EdgeInsets.only(bottom: 50),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Color(0xffe5e5e5),
