@@ -1,5 +1,6 @@
 import 'package:finalp/pages/Main_Page.dart';
 import 'package:finalp/pages/Profile_Page.dart';
+import 'package:finalp/pages/contactUs_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -63,9 +64,13 @@ class NavigationDrawer extends StatelessWidget {
               onTap: () {},
             ),
             ListTile(
-              leading: const Icon(Icons.workspaces_outlined),
-              title: const Text('Workflow'),
-              onTap: () {},
+              leading: const Icon(Icons.phone_callback_outlined),
+              title: const Text('Contact us'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const ContactUs()));
+              },
             ),
             ListTile(
               leading: const Icon(Icons.update),

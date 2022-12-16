@@ -13,7 +13,35 @@ class ProfilePage extends StatelessWidget {
         title: Text("Profile Page"),
         backgroundColor: Colors.black,
       ),
-      body: Center(child: Text("Profile Page")),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.only(top: 40, bottom: 35),
+              child: Transform.scale(
+                scale: 1.6,
+                child: CircleAvatar(
+                  radius: 52,
+                  backgroundImage: AssetImage("assets/images/IMG_0409.jpeg"),
+                ),
+              ),
+            ),
+            Divider(
+              color: Colors.grey.shade400,
+              indent: 15.0,
+              endIndent: 15.0,
+            ),
+            Text(
+              "Abdullah Albannay",
+              style: TextStyle(color: Colors.white, fontSize: 30),
+            ),
+            Text(
+              "al3bdf@gmail.com",
+              style: TextStyle(color: Colors.white, fontSize: 15),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
