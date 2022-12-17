@@ -79,25 +79,31 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "assets/images/html.png",
+                              "finalp/assets/images/unity-69-logo-png-transparent.png",
                             )),
                           ),
                         ),
                         title: Text(
-                          "Web",
+                          "GameDev",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("html:5, css, javasript"),
+                        subtitle: Text("C#, Unity"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
+                        trailing: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xff4E32DD),
+                          ),
+                          onPressed: () {},
+                        ),
                       ),
-                      margin: EdgeInsets.only(
-                        left: 20,
-                        right: 20,
-                        top: 10,
-                      ),
+                      margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
                       decoration: BoxDecoration(
-                          color: Colors.blueAccent,
+                          gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [Color(0xff4E32DD), Colors.black]),
                           borderRadius: BorderRadius.circular(20)),
                     ),
 
@@ -113,21 +119,31 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "assets/images/apple-logo-transparent.png",
+                              "finalp/assets/images/unity-69-logo-png-transparent.png",
                             )),
                           ),
                         ),
                         title: Text(
-                          "iOS",
+                          "GameDev",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("swift, SwiftUI"),
+                        subtitle: Text("C#, Unity"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
+                        trailing: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xff4E32DD),
+                          ),
+                          onPressed: () {},
+                        ),
                       ),
-                      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+                      margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
                       decoration: BoxDecoration(
-                          color: Colors.orange,
+                          gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [Color(0xff4E32DD), Colors.black]),
                           borderRadius: BorderRadius.circular(20)),
                     ),
 
@@ -143,21 +159,31 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "assets/images/Android_robot.svg.png",
+                              "finalp/assets/images/unity-69-logo-png-transparent.png",
                             )),
                           ),
                         ),
                         title: Text(
-                          "Android",
+                          "GameDev",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("Java, xml"),
+                        subtitle: Text("C#, Unity"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
+                        trailing: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xff4E32DD),
+                          ),
+                          onPressed: () {},
+                        ),
                       ),
-                      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+                      margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
                       decoration: BoxDecoration(
-                          color: Colors.green,
+                          gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [Color(0xff4E32DD), Colors.black]),
                           borderRadius: BorderRadius.circular(20)),
                     ),
 
@@ -173,21 +199,31 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "assets/images/unity-69-logo-png-transparent.png",
+                              "finalp/assets/images/unity-69-logo-png-transparent.png",
                             )),
                           ),
                         ),
                         title: Text(
-                          "Web",
+                          "GameDev",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("C#, unity"),
+                        subtitle: Text("C#, Unity"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
+                        trailing: IconButton(
+                          icon: Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xff4E32DD),
+                          ),
+                          onPressed: () {},
+                        ),
                       ),
-                      margin: EdgeInsets.only(top: 10, left: 20, right: 20),
+                      margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
                       decoration: BoxDecoration(
-                          color: Colors.indigo,
+                          gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [Color(0xff4E32DD), Colors.black]),
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     Padding(

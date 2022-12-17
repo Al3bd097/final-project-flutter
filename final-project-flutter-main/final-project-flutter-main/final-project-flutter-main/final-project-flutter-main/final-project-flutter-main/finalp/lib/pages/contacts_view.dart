@@ -63,7 +63,7 @@ class ContactsView extends StatelessWidget {
                           gradient: LinearGradient(
                               begin: Alignment.centerLeft,
                               end: Alignment.centerRight,
-                              colors: [Color(0xff4E32DD), Color(0xff)]),
+                              colors: [Color(0xff4E32DD), Colors.black]),
                           borderRadius: BorderRadius.circular(20)),
                     ));
               }))),
