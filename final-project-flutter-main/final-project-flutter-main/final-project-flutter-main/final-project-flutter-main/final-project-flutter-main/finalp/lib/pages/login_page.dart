@@ -1,10 +1,19 @@
 import 'package:finalp/pages/Main_Page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
+
+  final emails = TextEditingController();
+  final passwords = TextEditingController();
+  Future signIn() async {
+    FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emails.text.trim(), password: passwords.text.trim());
+    print("Signed in");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +41,7 @@ class LoginPage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
             child: TextField(
-              // controller: weightController,
-
+              controller: emails,
               decoration: InputDecoration(
                   labelText: "Email",
                   hintText: "Enter your Email",
@@ -56,8 +64,7 @@ class LoginPage extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
             child: TextField(
-              // controller: weightController,
-
+              controller: passwords,
               decoration: InputDecoration(
                   labelText: "Password",
                   hintText: "Enter your Email",
@@ -74,12 +81,10 @@ class LoginPage extends StatelessWidget {
             ),
           ),
 
-          InkWell(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                return MainPage();
-              })));
-            },
+          GestureDetector(
+            onTap: (() {
+              signIn();
+            }),
             child: Container(
               child: Text(
                 "Sign In",

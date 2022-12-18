@@ -84,10 +84,10 @@ class ClubsView2 extends StatelessWidget {
                           ),
                         ),
                         title: Text(
-                          "GameDev",
+                          "Web development",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("C#, Unity"),
+                        subtitle: Text("Html, CSS, JavaScript"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
                         trailing: IconButton(
@@ -124,10 +124,10 @@ class ClubsView2 extends StatelessWidget {
                           ),
                         ),
                         title: Text(
-                          "GameDev",
+                          "iOS",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("C#, Unity"),
+                        subtitle: Text("swift, SwiftUI"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
                         trailing: IconButton(
@@ -164,10 +164,10 @@ class ClubsView2 extends StatelessWidget {
                           ),
                         ),
                         title: Text(
-                          "GameDev",
+                          "Android",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        subtitle: Text("C#, Unity"),
+                        subtitle: Text("Java, xml"),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40)),
                         trailing: IconButton(
