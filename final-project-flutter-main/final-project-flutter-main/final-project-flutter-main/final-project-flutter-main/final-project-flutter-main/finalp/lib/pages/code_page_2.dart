@@ -33,38 +33,31 @@ class CodePage2 extends StatelessWidget {
               codes.description,
               style: TextStyle(fontSize: 20, color: Color(0xffe5e5e5)),
             ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: ((context) {
-                  return ProfilePage();
-                })));
-              },
-              child: Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Videos",
-                      style: TextStyle(
-                        fontSize: 40,
-                        color: Color(0xff14213d),
-                      ),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Videos",
+                    style: TextStyle(
+                      fontSize: 40,
+                      color: Color(0xff14213d),
                     ),
-                    RotatedBox(
-                      quarterTurns: 1,
-                      child: Text(
-                        ">",
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    )
-                  ],
-                ),
-                margin: EdgeInsets.only(top: 50, right: 10, left: 10),
-                decoration: BoxDecoration(
-                    color: Color(0xffe5e5e5),
-                    borderRadius: BorderRadius.circular(10)),
-                padding: EdgeInsets.all(15),
+                  ),
+                  RotatedBox(
+                    quarterTurns: 1,
+                    child: Text(
+                      ">",
+                      style: TextStyle(fontSize: 30),
+                    ),
+                  )
+                ],
               ),
+              margin: EdgeInsets.only(top: 50, right: 10, left: 10),
+              decoration: BoxDecoration(
+                  color: Color(0xffe5e5e5),
+                  borderRadius: BorderRadius.circular(10)),
+              padding: EdgeInsets.all(15),
             ),
           ],
         )),

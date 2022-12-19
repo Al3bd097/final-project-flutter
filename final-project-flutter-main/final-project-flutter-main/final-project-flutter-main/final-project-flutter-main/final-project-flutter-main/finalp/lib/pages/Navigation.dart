@@ -68,8 +68,8 @@ class NavigationDrawer extends StatelessWidget {
               title: const Text('Contact us'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const ContactUs()));
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => ContactUs()));
               },
             ),
             ListTile(

@@ -79,7 +79,7 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "finalp/assets/images/unity-69-logo-png-transparent.png",
+                              "assets/images/unity-69-logo-png-transparent.png",
                             )),
                           ),
                         ),
@@ -119,7 +119,7 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "finalp/assets/images/unity-69-logo-png-transparent.png",
+                              "assets/images/apple-logo-transparent.png",
                             )),
                           ),
                         ),
@@ -159,7 +159,7 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "finalp/assets/images/unity-69-logo-png-transparent.png",
+                              "assets/images/Android_robot.svg.png",
                             )),
                           ),
                         ),

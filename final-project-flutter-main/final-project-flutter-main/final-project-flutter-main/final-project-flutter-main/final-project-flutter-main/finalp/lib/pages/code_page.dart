@@ -69,11 +69,18 @@ class CodePage extends StatelessWidget {
                 padding: EdgeInsets.all(15),
               ),
             ),
-            Link(
-                target: LinkTarget.blank,
-                uri: Uri.parse(coode.videoLinks),
-                builder: (context, followLink) => GestureDetector(
-                    onTap: followLink, child: Image.asset(coode.videoImage))),
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              child: Link(
+                  target: LinkTarget.blank,
+                  uri: Uri.parse(coode.videoLinks),
+                  builder: (context, followLink) => GestureDetector(
+                      onTap: followLink,
+                      child: Image.asset(
+                        coode.videoImage,
+                        width: 400,
+                      ))),
+            ),
           ],
         )),
         color: Color(0xff09051a),

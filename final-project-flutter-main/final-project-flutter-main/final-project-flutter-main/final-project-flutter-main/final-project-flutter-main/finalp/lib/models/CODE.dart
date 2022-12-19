@@ -24,7 +24,7 @@ class Code {
       imageBg: "assets/images/Screenshot 2022-12-13 at 22.51.03.png",
       description: "iOS Coding Language",
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
-      videoImage: "finalp/assets/images/swiftuiVideo.png",
+      videoImage: "assets/images/swiftuiVideo.png",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
     ),
     // Flutter
@@ -34,7 +34,7 @@ class Code {
       imageBg: "assets/images/swiftBg.jpg",
       description: "cross platform development",
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
-      videoImage: "finalp/assets/images/flutterVideo.png",
+      videoImage: "assets/images/flutterVideo.png",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",
     ),
     // Html
@@ -44,7 +44,7 @@ class Code {
       imageBg: "assets/images/html.png",
       description: "Web development structure",
       videosNames: "HTML Tutorial for Beginners: HTML Crash Course",
-      videoImage: "finalp/assets/images/htmlVideo.png",
+      videoImage: "assets/images/htmlVideo.png",
       videoLinks: "https://youtu.be/qz0aGYrrlhU",
     ),
   ];
