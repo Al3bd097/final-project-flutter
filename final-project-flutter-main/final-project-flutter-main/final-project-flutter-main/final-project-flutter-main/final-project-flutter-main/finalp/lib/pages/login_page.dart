@@ -23,6 +23,13 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    emails.addListener(() => setState(() {}));
+    passwords.addListener(() => setState(() {}));
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       // backgroundColor: Colors.amber,
@@ -34,6 +41,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Spacer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
@@ -59,6 +67,11 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.mail,
                     color: Colors.grey,
                   ),
+                  suffixIcon: emails.text.isEmpty
+                      ? Container(width: 0)
+                      : IconButton(
+                          onPressed: () => emails.clear(),
+                          icon: Icon(Icons.close)),
                   hintText: "Enter your Email",
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -90,6 +103,11 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.lock_outline_rounded,
                     color: Colors.grey,
                   ),
+                  suffixIcon: passwords.text.isEmpty
+                      ? Container(width: 0)
+                      : IconButton(
+                          onPressed: () => passwords.clear(),
+                          icon: Icon(Icons.close)),
                   hintText: "Enter your Email",
                   enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -158,8 +176,9 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          Container(
+            margin: EdgeInsets.only(right: 10),
+            padding: EdgeInsets.all(8.0),
             child: Transform.scale(
               scale: 1.2,
               child: Row(
@@ -175,6 +194,23 @@ class _LoginPageState extends State<LoginPage> {
                   )
                 ],
               ),
+            ),
+          ),
+          Spacer(),
+          Container(
+            margin: EdgeInsets.only(bottom: 20, left: 17),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Dont have an account?",
+                  style: TextStyle(color: Colors.grey),
+                ),
+                Text(
+                  " Sign Up",
+                  style: TextStyle(color: Colors.blue),
+                )
+              ],
             ),
           )
         ],

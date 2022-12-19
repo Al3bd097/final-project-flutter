@@ -22,7 +22,9 @@ class _ContactUsState extends State<ContactUs> {
   void initState() {
     super.initState();
 
+    name.addListener(() => setState(() {}));
     email.addListener(() => setState(() {}));
+    description.addListener(() => setState(() {}));
   }
 
   @override
@@ -58,6 +60,7 @@ class _ContactUsState extends State<ContactUs> {
               margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
               child: TextField(
                 controller: name,
+                style: TextStyle(color: Colors.grey),
                 decoration: InputDecoration(
                     labelText: "Name",
                     labelStyle: TextStyle(color: Colors.grey),
@@ -65,6 +68,11 @@ class _ContactUsState extends State<ContactUs> {
                       Icons.person,
                       color: Colors.grey,
                     ),
+                    suffixIcon: name.text.isEmpty
+                        ? Container(width: 0)
+                        : IconButton(
+                            onPressed: () => name.clear(),
+                            icon: Icon(Icons.close)),
                     hintText: "<Coder/>",
                     hintStyle: TextStyle(color: Colors.grey),
                     enabledBorder: OutlineInputBorder(
@@ -87,6 +95,7 @@ class _ContactUsState extends State<ContactUs> {
               margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
               child: TextField(
                 controller: email,
+                style: TextStyle(color: Colors.grey),
                 decoration: InputDecoration(
                     labelText: "Email",
                     labelStyle: TextStyle(color: Colors.grey),
@@ -94,6 +103,11 @@ class _ContactUsState extends State<ContactUs> {
                       Icons.mail,
                       color: Colors.grey,
                     ),
+                    suffixIcon: email.text.isEmpty
+                        ? Container(width: 0)
+                        : IconButton(
+                            onPressed: () => email.clear(),
+                            icon: Icon(Icons.close)),
                     hintText: "name@example.com",
                     hintStyle: TextStyle(color: Colors.grey),
                     enabledBorder: OutlineInputBorder(
@@ -116,6 +130,7 @@ class _ContactUsState extends State<ContactUs> {
               margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
               child: TextField(
                 controller: description,
+                style: TextStyle(color: Colors.grey),
                 decoration: InputDecoration(
                     labelText: "Description",
                     labelStyle: TextStyle(color: Colors.grey),
@@ -123,7 +138,7 @@ class _ContactUsState extends State<ContactUs> {
                       Icons.article,
                       color: Colors.grey,
                     ),
-                    suffixIcon: email.text.isEmpty
+                    suffixIcon: description.text.isEmpty
                         ? Container(width: 0)
                         : IconButton(
                             onPressed: () => description.clear(),

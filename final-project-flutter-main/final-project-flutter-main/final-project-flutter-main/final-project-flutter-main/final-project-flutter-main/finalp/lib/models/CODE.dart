@@ -6,6 +6,8 @@ class Code {
   String videosNames;
   String videoImage;
   String videoLinks;
+  String websiteName;
+  String website;
 
   Code(
       {required this.name,
@@ -14,7 +16,9 @@ class Code {
       required this.description,
       required this.videosNames,
       required this.videoImage,
-      required this.videoLinks});
+      required this.videoLinks,
+      required this.websiteName,
+      required this.website});
 
   static List<Code> FrontEnds = [
     // Swift
@@ -26,6 +30,8 @@ class Code {
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
       videoImage: "assets/images/swiftuiVideo.png",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
+      website: "https://www.hackingwithswift.com",
+      websiteName: "HackingWithSwift.com",
     ),
     // Flutter
     Code(
@@ -36,6 +42,8 @@ class Code {
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
       videoImage: "assets/images/flutterVideo.png",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",
+      website: "https://docs.flutter.dev",
+      websiteName: "docs.flutter.dev",
     ),
     // Html
     Code(
@@ -46,6 +54,8 @@ class Code {
       videosNames: "HTML Tutorial for Beginners: HTML Crash Course",
       videoImage: "assets/images/htmlVideo.png",
       videoLinks: "https://youtu.be/qz0aGYrrlhU",
+      website: "https://www.w3schools.com",
+      websiteName: "W3schools",
     ),
   ];
   //
@@ -62,7 +72,9 @@ class Code {
         imageBg: "assets/images/phpbg.png",
         videosNames: "",
         videoImage: "",
-        videoLinks: ""),
+        videoLinks: "",
+        website: '',
+        websiteName: ''),
     // django
     Code(
       name: "django",
@@ -72,6 +84,8 @@ class Code {
       videosNames: "",
       videoImage: "",
       videoLinks: "",
+      website: '',
+      websiteName: '',
     ),
     // Html
     Code(
@@ -82,6 +96,8 @@ class Code {
       videosNames: "",
       videoImage: "",
       videoLinks: "",
+      website: '',
+      websiteName: '',
     )
   ];
   ////////////////////
@@ -98,6 +114,8 @@ class Code {
       videosNames: "How to use Xcode in SwiftUI project | Bootcamp #1",
       videoImage: "",
       videoLinks: "https://youtu.be/N-ntKJdVNBs",
+      website: '',
+      websiteName: '',
     ),
     // Flutter
     Code(
@@ -108,6 +126,8 @@ class Code {
       videosNames: "Flutter Tutorial for Beginners #1 - Intro & Setup",
       videoImage: "",
       videoLinks: "https://youtu.be/1ukSR1GRtMU",
+      website: '',
+      websiteName: '',
     ),
     // Html
     Code(
@@ -118,6 +138,8 @@ class Code {
       videosNames: "",
       videoImage: "",
       videoLinks: "",
+      website: '',
+      websiteName: '',
     ),
     // Php
     Code(
@@ -127,7 +149,9 @@ class Code {
         imageBg: "assets/images/phpbg.png",
         videosNames: "",
         videoImage: "",
-        videoLinks: ""),
+        videoLinks: "",
+        website: '',
+        websiteName: ''),
     // django
     Code(
       name: "django",
@@ -137,6 +161,8 @@ class Code {
       videosNames: "",
       videoImage: "",
       videoLinks: "",
+      website: '',
+      websiteName: '',
     ),
     // Html
     Code(
@@ -147,6 +173,8 @@ class Code {
       videosNames: "",
       videoImage: "",
       videoLinks: "",
+      website: '',
+      websiteName: '',
     )
   ];
 }
