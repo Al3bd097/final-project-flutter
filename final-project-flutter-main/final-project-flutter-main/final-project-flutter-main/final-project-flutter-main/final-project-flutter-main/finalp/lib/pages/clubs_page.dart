@@ -61,7 +61,7 @@ class ClubsView extends StatelessWidget {
                           image: AssetImage(Club.clubs[index].imagebg),
                           fit: BoxFit.cover),
                       boxShadow: [
-                        BoxShadow(color: Color(0xff4E32DD), spreadRadius: 5)
+                        BoxShadow(color: Color(0xff4E32DD), spreadRadius: 2.0)
                       ]),
                 );
               })),

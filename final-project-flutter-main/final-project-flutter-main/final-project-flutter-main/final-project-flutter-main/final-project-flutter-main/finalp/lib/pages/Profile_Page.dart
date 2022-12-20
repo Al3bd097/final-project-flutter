@@ -44,22 +44,34 @@ class ProfilePage extends StatelessWidget {
               "al3bdf@gmail.com",
               style: TextStyle(color: Colors.white, fontSize: 15),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  _signOut();
-                  showDialog(
-                      context: context,
-                      builder: (context) => AlertDialog(
-                            backgroundColor: Color(0xff4E32DD),
-                            title: Text(
-                              "Signing Out...!",
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            content: Text("We Are sorry to see you leave",
-                                style: TextStyle(color: Colors.white)),
-                          ));
-                },
-                child: Text("Sign Out"))
+            Spacer(),
+            Text(
+              "Coming \nSoon...",
+              style: TextStyle(color: Colors.white, fontSize: 100),
+            ),
+            Spacer(),
+            Container(
+              margin: EdgeInsets.all(60),
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff4E32DD),
+                      minimumSize: Size(340, 45)),
+                  onPressed: () {
+                    _signOut();
+                    showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                              backgroundColor: Color(0xff4E32DD),
+                              title: Text(
+                                "Signing Out...!",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              content: Text("We Are sorry to see you leave",
+                                  style: TextStyle(color: Colors.white)),
+                            ));
+                  },
+                  child: Text("Sign Out")),
+            )
           ],
         ),
       ),

@@ -31,9 +31,12 @@ class NavigationDrawer extends StatelessWidget {
               top: 24 + MediaQuery.of(context).padding.top, bottom: 24),
           child: Column(
             children: [
-              CircleAvatar(
-                radius: 52,
-                backgroundImage: AssetImage("assets/images/IMG_0409.jpeg"),
+              Transform.scale(
+                scale: 1.2,
+                child: CircleAvatar(
+                  radius: 52,
+                  backgroundImage: AssetImage("assets/images/IMG_0409.jpeg"),
+                ),
               ),
               SizedBox(height: 12),
               Text("Abdullah",
