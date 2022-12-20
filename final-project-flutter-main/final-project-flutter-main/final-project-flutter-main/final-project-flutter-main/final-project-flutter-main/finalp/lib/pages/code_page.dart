@@ -9,9 +9,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:url_launcher/link.dart';
 
 class CodePage extends StatelessWidget {
-  const CodePage({super.key, required this.coode});
+  CodePage({super.key, required this.coode});
   final Code coode;
-
+  int num = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,94 +37,130 @@ class CodePage extends StatelessWidget {
                 coode.description,
                 style: TextStyle(fontSize: 20, color: Color(0xffe5e5e5)),
               ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Videos",
-                      style: TextStyle(
-                        fontSize: 40,
-                        color: Color(0xff14213d),
-                      ),
-                    ),
-                    RotatedBox(
-                      quarterTurns: 1,
-                      child: Text(
-                        ">",
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    )
-                  ],
-                ),
-                margin: EdgeInsets.only(top: 50, right: 10, left: 10),
-                decoration: BoxDecoration(
-                    color: Color(0xffe5e5e5),
+
+              ///
+              /// Videos
+              ///
+              Card(
+                margin: EdgeInsets.only(left: 10, right: 10, top: 20),
+                shadowColor: Color(0xff4E32DD),
+                shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
-                padding: EdgeInsets.all(15),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 20),
-                child: Link(
-                    target: LinkTarget.blank,
-                    uri: Uri.parse(coode.videoLinks),
-                    builder: (context, followLink) => GestureDetector(
-                        onTap: followLink,
-                        child: Image.asset(
-                          coode.videoImage,
-                          width: 400,
-                        ))),
-              ),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Websites",
-                      style: TextStyle(
-                        fontSize: 40,
-                        color: Color(0xff14213d),
+                child: Container(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                          colors: [Color(0xff4E32DD), Colors.black],
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight)),
+                  child: ExpansionTile(
+                      title: Text(
+                        "Videos",
+                        style: TextStyle(color: Colors.white),
                       ),
-                    ),
-                    RotatedBox(
-                      quarterTurns: 1,
-                      child: Text(
-                        ">",
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    )
-                  ],
+                      children: [
+                        Transform.scale(
+                          scale: 0.92,
+                          child: Container(
+                            child: ListTile(
+                              contentPadding: EdgeInsets.all(15),
+                              leading: Transform.scale(
+                                  scale: 1.2,
+                                  child: Image.asset(coode.videoImage)
+                                  // CircleAvatar(
+                                  //     backgroundImage: AssetImage(
+                                  //   coode.videoImage,
+                                  // )),
+                                  ),
+                              title: Text(
+                                coode.videosNames,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 30,
+                                    color: Colors.grey),
+                              ),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(40)),
+                              trailing: Container(
+                                margin: EdgeInsets.only(right: 5, top: 8),
+                                child: Link(
+                                    target: LinkTarget.blank,
+                                    uri: Uri.parse(coode.videoLinks),
+                                    builder: (context, followLink) =>
+                                        GestureDetector(
+                                          onTap: followLink,
+                                          child: Text(
+                                            ">",
+                                            style: TextStyle(
+                                                color: Color(0xff4E32DD),
+                                                fontSize: 30),
+                                          ),
+                                        )),
+                              ),
+                            ),
+                            margin: EdgeInsets.only(right: 20, bottom: 20),
+                            decoration: BoxDecoration(
+                                // gradient: LinearGradient(
+                                //     begin: Alignment.centerLeft,
+                                //     end: Alignment.centerRight,
+                                //     colors: [Color(0xff4E32DD), Colors.black]),
+                                borderRadius: BorderRadius.circular(30)),
+                          ),
+                        ),
+                      ]),
                 ),
-                margin: EdgeInsets.only(top: 50, right: 10, left: 10),
-                decoration: BoxDecoration(
-                    color: Color(0xffe5e5e5),
-                    borderRadius: BorderRadius.circular(10)),
-                padding: EdgeInsets.all(15),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(left: 15, top: 20),
-                    child: Link(
-                        target: LinkTarget.blank,
-                        uri: Uri.parse(coode.website),
-                        builder: (context, followLink) => GestureDetector(
-                            onTap: followLink,
-                            child: Text(
-                              coode.websiteName,
-                              style: TextStyle(
-                                  color: Color(0xff4E32DD),
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold),
-                            ))),
-                  ),
-                ],
+
+              ///
+              /// Websites
+              ///
+              Card(
+                margin: EdgeInsets.only(left: 10, right: 10, top: 20),
+                shadowColor: Color(0xff4E32DD),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)),
+                child: Container(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                          colors: [Color(0xff4E32DD), Colors.black],
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight)),
+                  child: ExpansionTile(
+                      title: Text(
+                        "Websites",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(left: 15, top: 20),
+                              child: Link(
+                                  target: LinkTarget.blank,
+                                  uri: Uri.parse(coode.website),
+                                  builder: (context, followLink) =>
+                                      GestureDetector(
+                                          onTap: followLink,
+                                          child: Container(
+                                            margin: EdgeInsets.only(bottom: 40),
+                                            child: Text(
+                                              "* ${coode.websiteName}",
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 30,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ))),
+                            ),
+                          ],
+                        ),
+                      ]),
+                ),
               ),
             ],
           )),
           color: Color(0xff09051a),
-          padding: EdgeInsets.only(bottom: 250),
+          padding: EdgeInsets.only(bottom: 450),
         ),
       ),
     );

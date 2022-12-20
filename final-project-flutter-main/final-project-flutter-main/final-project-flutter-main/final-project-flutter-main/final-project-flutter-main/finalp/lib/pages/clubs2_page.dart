@@ -79,7 +79,7 @@ class ClubsView2 extends StatelessWidget {
                             scale: 1.0,
                             child: CircleAvatar(
                                 backgroundImage: AssetImage(
-                              "assets/images/unity-69-logo-png-transparent.png",
+                              "assets/images/2467893.png",
                             )),
                           ),
                         ),
@@ -114,13 +114,10 @@ class ClubsView2 extends StatelessWidget {
                       child: ListTile(
                         contentPadding: EdgeInsets.all(15),
                         leading: Transform.scale(
-                          scale: 1.3,
-                          child: Transform.scale(
-                            scale: 1.0,
-                            child: CircleAvatar(
-                                backgroundImage: AssetImage(
-                              "assets/images/apple-logo-transparent.png",
-                            )),
+                          scale: 3.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.apple),
                           ),
                         ),
                         title: Text(
@@ -154,13 +151,10 @@ class ClubsView2 extends StatelessWidget {
                       child: ListTile(
                         contentPadding: EdgeInsets.all(15),
                         leading: Transform.scale(
-                          scale: 1.3,
-                          child: Transform.scale(
-                            scale: 1.0,
-                            child: CircleAvatar(
-                                backgroundImage: AssetImage(
-                              "assets/images/Android_robot.svg.png",
-                            )),
+                          scale: 3.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.android),
                           ),
                         ),
                         title: Text(
@@ -194,13 +188,10 @@ class ClubsView2 extends StatelessWidget {
                       child: ListTile(
                         contentPadding: EdgeInsets.all(15),
                         leading: Transform.scale(
-                          scale: 1.3,
-                          child: Transform.scale(
-                            scale: 1.0,
-                            child: CircleAvatar(
-                                backgroundImage: AssetImage(
-                              "finalp/assets/images/unity-69-logo-png-transparent.png",
-                            )),
+                          scale: 3.0,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(Icons.gamepad),
                           ),
                         ),
                         title: Text(
