@@ -224,8 +224,13 @@ class ClubsView2 extends StatelessWidget {
                           uri: Uri.parse(
                               "https://goo.gl/maps/M88o9xU1HueruD8W7"),
                           builder: (context, followLink) => ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Color(0xff4E32DD),
+                                  minimumSize: Size(340, 45)),
                               onPressed: followLink,
-                              child: Text("Head there!"))),
+                              child: Text(
+                                "Head there!",
+                              ))),
                     )
                   ],
                 ),

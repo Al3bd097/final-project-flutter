@@ -11,7 +11,6 @@ import 'package:url_launcher/link.dart';
 class CodePage extends StatelessWidget {
   CodePage({super.key, required this.coode});
   final Code coode;
-  int num = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
